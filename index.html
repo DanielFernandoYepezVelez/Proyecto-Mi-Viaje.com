@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Fernando Yepez Velez">
+    <meta name="description" content="This is a interactive page with HTML5, CSS3, JS">
+    <meta name="keywords" content="Project, HTML5, CSS3, JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MiViaje.com</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="hero">
+        <header class="hero__header contenedor">
+            <figure class="hero__logo">
+                <img src="./img/logo.png" alt="logo">
+            </figure>
+            <nav class="hero__nav">
+                <a class="hero__nav--item" href="#">Vender</a>
+                <a class="hero__nav--item" href="#">Ayuda</a>
+                <a class="hero__nav--item" href="#">Regristro</a>
+                <a class="hero__nav--item" href="#">Iniciar Sesión</a>
+            </nav>
+        </header>
+
+        <div class="hero__contenido contenedor">
+            <h1>Encuentra Hospedaje Para Tus Proximas Vacaciones</h1>
+            <form action="#">
+                <input type="text" name="busqueda" class="hero__contenido--input" placeholder="Medellín, Antioquía, Colombia, América">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+
+    <main class="main contenedor">
+        <article class="main__contenido">
+            <h2>Que Hacer</h2>
+            <section class="main__cards">
+                <figure class="main__card">
+                    <img src="./img/hacer1.jpg" alt="ImageOne">
+                    <figcaption class="main__info">
+                        <p class="main__categoria main__concierto">Concierto</p>
+                        <p class="main__titulo">Musica Electronica</p>
+                        <p class="main__precio">$1.200 Por Persona</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="main__card">
+                    <img src="./img/hacer2.jpg" alt="ImageOne">
+                    <figcaption class="main__info">
+                        <p class="main__categoria main__concierto">Concierto</p>
+                        <p class="main__titulo">Rock En Los Angeles</p>
+                        <p class="main__precio">$300 Por Persona</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="main__card">
+                    <img src="./img/hacer3.jpg" alt="ImageOne">
+                    <figcaption class="main__info">
+                        <p class="main__categoria main__cocina">Clase De Cocina</p>
+                        <p class="main__titulo">Comida Colombiana</p>
+                        <p class="main__precio">$600 Por Persona</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="main__card">
+                    <img src="./img/hacer4.jpg" alt="ImageOne">
+                    <figcaption class="main__info">
+                        <p class="main__categoria main__paseo">Pase En Bici</p>
+                        <p class="main__titulo">Montañismo Tour</p>
+                        <p class="main__precio">$400 Por Persona</p>
+                    </figcaption>
+                </figure>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

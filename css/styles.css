@@ -1,0 +1,193 @@
+:root {
+    --fuentePrincipal: 'Lato', sans-serif;
+    --primario: #da595e;
+    --oscuro: #484848;
+    --claro: #ffffff;
+    --hospedaje: #275154;
+    --cocina: #598dda;
+    --paseo: #940ad4;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+
+/* COLORES */
+
+.main__concierto {
+    color: var(--primario);
+}
+
+.main__cocina {
+    color: var(--cocina);
+}
+
+.main__paseo {
+    color: var(--paseo);
+}
+
+.main__hospedaje {
+    color: var(--hospedaje);
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* HERO */
+
+.hero {
+    display: grid;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('../img/arriba.jpg');
+    grid-template-rows: 1fr 2fr;
+}
+
+.hero__header {
+    width: 100%;
+    display: flex;
+    padding: .5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero__nav--item {
+    margin-right: 1rem;
+    color: var(--claro);
+    text-decoration: none;
+}
+
+.hero__nav--item:last-child {
+    margin-right: 0;
+}
+
+.hero__contenido {
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: max-content auto;
+}
+
+.hero__contenido h1 {
+    color: var(--claro);
+    grid-column: 2 / 3;
+}
+
+.hero__contenido form {
+    height: 4rem;
+    display: flex;
+    grid-column: 2 / 3;
+    position: relative;
+}
+
+.hero__contenido form input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: 5rem;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-image: url(../img/lupa.png);
+    background-position: calc(1% + 1rem) calc(1% + .8rem);
+}
+
+.hero__contenido form input[type="submit"] {
+    top: .6rem;
+    right: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    position: absolute;
+    color: var(--claro);
+    padding: .7rem 2rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: var(--primario);
+}
+
+.hero__contenido form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+.main__contenido {
+    padding: 0 .3rem;
+}
+
+.main h2 {
+    margin: 1rem 0;
+}
+
+.main__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
+
+
+/* Se Asigna Todo El Ancho A La Imagen Para QUe Ocupe Todo El Ancho Del Contenedor Padre (IMPORTANTE) */
+
+.main__card img {
+    width: 100%;
+}
+
+.main__categoria {
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.main__titulo {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.main__precio {
+    color: var(--oscuro);
+    font-size: .9rem;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__header {
+        height: 13vh;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
