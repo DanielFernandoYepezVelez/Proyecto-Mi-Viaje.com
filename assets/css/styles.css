@@ -92,8 +92,9 @@ h3 {
     display: grid;
     height: 100vh;
     background-size: cover;
-    background-image: url('../img/arriba.jpg');
     grid-template-rows: 1fr 2fr;
+    background-repeat: no-repeat;
+    background-image: url('../img/arriba.jpg');
 }
 
 .hero__header {

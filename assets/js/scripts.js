@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (tiempo > 40) {
             tiempo = 0;
 
-            imagenHero.style.backgroundImage = `url(../img/${imagenes[i]})`;
+            imagenHero.style.backgroundImage = `url(./assets/img/${imagenes[i]})`;
 
             if (i === (imagenes.length - 1)) {
                 i = 0;
             } else {
                 i++;
-                console.log(i);
+                // console.log(i);
             }
         }
 
